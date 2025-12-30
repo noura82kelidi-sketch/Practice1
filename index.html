@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پروژه فرم شماره - 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      body {
+        background-color: rgb(160, 208, 250);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        height: 700px;
+      }
+      [class|=steam]{
+        position: relative;
+        top: 238px;
+        left: 300px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgba(227, 227, 227,.4)
+      }
+
+      .material-icons {
+        position: relative;
+        font-size: 430px;
+        color: white;
+        right: -135px;
+        top: 50px;
+      }
+
+      .steam-1{
+        animation: up1 5s ease  infinite;
+      }
+
+      .steam-2{
+        animation: up2 5s ease .5s infinite;
+      }
+
+      .steam-3{
+        animation: up3 5s ease .7s infinite;
+      }
+
+      .steam-4{
+        animation: up4 5s ease 1s infinite;
+      }
+
+      @keyframes up1{
+        0%{
+          top: 238px;
+        }
+        100%{
+          top: 10px;
+          left: 280px;
+          transform: scale(7);
+          background-color:rgba(227, 227, 227,0.05)
+        }
+      }
+
+      @keyframes up2{
+        0%{
+          top: 238px;
+        }
+        100%{
+          top: 20px;
+          left: 320px;
+          transform: scale(6);
+          background-color:rgba(227, 227, 227,0.05)
+        }
+      }
+
+      @keyframes up3{
+        0%{
+          top: 238px;
+        }
+        100%{
+          top: 30px;
+          left: 280px;
+          transform: scale(5);
+          background-color:rgba(227, 227, 227,0.05)
+        }
+      }
+
+      @keyframes up4{
+        0%{
+          top: 238px;
+        }
+        100%{
+          top: 40px;
+          left: 320px;
+          transform: scale(4);
+          background-color:rgba(227, 227, 227,0.05)
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="steam-1"></div>
+      <div class="steam-2"></div>
+      <div class="steam-3"></div>
+      <div class="steam-4"></div>
+      <span class="material-icons">
+        local_cafe</span>
+      
+    </div>
+  </body>
+</html>
